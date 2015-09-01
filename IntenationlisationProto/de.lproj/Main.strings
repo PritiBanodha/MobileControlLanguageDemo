@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Change language to French"; ObjectID = "7by-Bn-VYw"; */
+"7by-Bn-VYw.normalTitle" = "Change language to French";
+
+/* Class = "UIButton"; normalTitle = "Change language to English"; ObjectID = "Epe-q4-mUu"; */
+"Epe-q4-mUu.normalTitle" = "Change language to English";
+
+/* Class = "UIButton"; normalTitle = "Change language to Japanese"; ObjectID = "Pjh-ZT-Fd2"; */
+"Pjh-ZT-Fd2.normalTitle" = "Change language to Japanese";
+
+/* Class = "UILabel"; text = "This is label"; ObjectID = "jl1-Mg-E19"; */
+"jl1-Mg-E19.text" = "This is label";
