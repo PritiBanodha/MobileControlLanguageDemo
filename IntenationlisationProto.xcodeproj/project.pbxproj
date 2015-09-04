@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11CA65C81B96300F0097C593 /* BundleLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CA65C51B96300F0097C593 /* BundleLocalization.m */; };
+		11CA65C91B96300F0097C593 /* NSBundle+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CA65C71B96300F0097C593 /* NSBundle+Localization.m */; };
 		7B08444F1B4BE2F700484F08 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B08444E1B4BE2F700484F08 /* cancel.png */; };
 		7B5FE9941B45345C0024A7B5 /* LocalizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5FE9931B45345C0024A7B5 /* LocalizeHelper.m */; };
 		7BCC503E1B3D72A4002E969B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC503D1B3D72A4002E969B /* main.m */; };
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11CA65C41B96300F0097C593 /* BundleLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleLocalization.h; sourceTree = "<group>"; };
+		11CA65C51B96300F0097C593 /* BundleLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleLocalization.m; sourceTree = "<group>"; };
+		11CA65C61B96300F0097C593 /* NSBundle+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Localization.h"; sourceTree = "<group>"; };
+		11CA65C71B96300F0097C593 /* NSBundle+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Localization.m"; sourceTree = "<group>"; };
 		7B08444E1B4BE2F700484F08 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
 		7B2749F01B948051009751B9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		7B2749F11B948051009751B9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -77,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11CA65C31B9630050097C593 /* BundleLocalization */ = {
+			isa = PBXGroup;
+			children = (
+				11CA65C41B96300F0097C593 /* BundleLocalization.h */,
+				11CA65C51B96300F0097C593 /* BundleLocalization.m */,
+				11CA65C61B96300F0097C593 /* NSBundle+Localization.h */,
+				11CA65C71B96300F0097C593 /* NSBundle+Localization.m */,
+			);
+			name = BundleLocalization;
+			sourceTree = "<group>";
+		};
 		7BCC502F1B3D72A4002E969B = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +116,7 @@
 		7BCC503A1B3D72A4002E969B /* IntenationlisationProto */ = {
 			isa = PBXGroup;
 			children = (
+				11CA65C31B9630050097C593 /* BundleLocalization */,
 				7BCC503F1B3D72A4002E969B /* AppDelegate.h */,
 				7BCC50671B3D76B6002E969B /* Localizable.strings */,
 				7BCC50401B3D72A4002E969B /* AppDelegate.m */,
@@ -247,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BCC50441B3D72A4002E969B /* ViewController.m in Sources */,
+				11CA65C91B96300F0097C593 /* NSBundle+Localization.m in Sources */,
 				7BCC50411B3D72A4002E969B /* AppDelegate.m in Sources */,
 				7B5FE9941B45345C0024A7B5 /* LocalizeHelper.m in Sources */,
+				11CA65C81B96300F0097C593 /* BundleLocalization.m in Sources */,
 				7BCC503E1B3D72A4002E969B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

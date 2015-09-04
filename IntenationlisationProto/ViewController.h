@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BundleLocalization.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <BundleLanguageChangedProtocol>
 
 @property (nonatomic, weak) IBOutlet UILabel *titleTxt;
 

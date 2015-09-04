@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "LocalizeHelper.h"
 
 @interface ViewController ()
 @end
@@ -17,8 +16,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.titleTxt.text = AMLocalizedString(@"titletext", nil);
+    self.titleTxt.text = NSLocalizedString(@"titletext", nil);
 
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleLanguageChange)
+                                                 name:kCNLanguageChangedNotification
+                                               object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,18 +33,23 @@
 {
     switch (((UIButton *)sender).tag) {
         case 0:
-            LocalizationSetLanguage(@"ja");
+            [[BundleLocalization sharedInstance] setLanguage:@"ja"];
             break;
         case 1:
-            LocalizationSetLanguage(@"fr");
+            [[BundleLocalization sharedInstance] setLanguage:@"fr"];
             break;
         case 2:
-            LocalizationSetLanguage(@"en");
+            [[BundleLocalization sharedInstance] setLanguage:@"en"];
             break;
         default:
             break;
     }
-    self.titleTxt.text = AMLocalizedString(@"titletext", nil);
+}
+
+
+- (void) handleLanguageChange
+{
+    self.titleTxt.text = NSLocalizedString(@"titletext", nil);
 }
 
 
